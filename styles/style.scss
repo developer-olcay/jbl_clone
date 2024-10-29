@@ -1,0 +1,79 @@
+// * Google Fonts   font-family: "Poppins", sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+// * Diğer Scss Dosyalarının İmportu
+@import "./variables";
+@import "./header";
+@import "./home";
+@import "./responsive";
+@import "./about";
+@import "./favorite";
+@import "./model";
+@import "./sponsor";
+@import "./footer";
+
+// Css Sıfırlama
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+// Ortak Css
+
+body {
+  background-color: $body-color;
+  color: $text-color;
+  font-size: $normal-font-size;
+  font-family: $body-font;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+h1,
+h2,
+h3,
+h4 {
+  color: $white-color;
+  font-weight: $font-semi-bold;
+}
+
+.container {
+  max-width: 1120px;
+  margin-inline: 24px;
+}
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.section {
+  padding-block: 80px 16px;
+}
+
+.button {
+  background: $gradient-color;
+  padding: 12px;
+  color: #fff;
+  border-radius: 64px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 8px;
+  font-weight: $font-semi-bold;
+  transition: all 0.4s;
+  i {
+    font-size: 32px;
+    color: $first-color;
+  }
+  &:hover {
+    box-shadow: 0px 12px 32px #271208;
+  }
+}
